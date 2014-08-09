@@ -18,7 +18,7 @@ x$datetime <- strptime(with(x, paste(Date, Time)),
 x <- x[c(10,3:9)]
 
 ## Make plot 1
-png("plot1.png", type = "cairo-png", width = 480, height = 480, bg = "transparent")
+png("plot1.png", type = "cairo", width = 480, height = 480, bg = "transparent")
 hist(x$Global_active_power, col = "red", main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)")
 dev.off()
