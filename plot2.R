@@ -18,7 +18,7 @@ x$datetime <- strptime(with(x, paste(Date, Time)),
 x <- x[c(10,3:9)]
 
 ## Make plot 2
-png("plot2.png", width = 480, height = 480)
+png("plot2.png", width = 480, height = 480, bg = "transparent")
 plot(x$datetime, x$Global_active_power, type = "l", xlab = "",
      ylab = "Global Active Power (kilowatts)")
 dev.off()
