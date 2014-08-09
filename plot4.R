@@ -23,7 +23,7 @@ x <- x[c(10,3:9)]
 old.par <- par()
 
 # Create plot 4
-png("plot4.png", width = 480, height = 480, bg = "transparent")
+png("plot4.png", type = "cairo-png", width = 480, height = 480, bg = "transparent")
 par(mfcol = c(2, 2))
 with(x, {
   plot(datetime, Global_active_power, type = "l", xlab = "",

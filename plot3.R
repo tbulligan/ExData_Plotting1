@@ -18,7 +18,7 @@ x$datetime <- strptime(with(x, paste(Date, Time)),
 x <- x[c(10,3:9)]
 
 ## Make plot 3
-png("plot3.png", width = 480, height = 480, bg = "transparent")
+png("plot3.png", type = "cairo-png", width = 480, height = 480, bg = "transparent")
 plot(x$datetime, x$Sub_metering_1, type = "l", xlab = "",
      ylab = "Energy sub metering")
 lines(x$datetime, x$Sub_metering_2, col = "red")
